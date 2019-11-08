@@ -3,7 +3,7 @@ node{
 Project_ID = "${Project_ID}"
 Repo_Name = "${Repo_Name}"
 filepath="${workspace}"
-cleanWs()
+
 
 stage("CheckOut Code")
 
@@ -13,7 +13,7 @@ stage("CheckOut Code")
 stage("Maven Build")
 {
 env.WORKSPACE = pwd()
-sh "mvn clean install -Dmaven.test.skip=true -o &>> $filepath"
+sh "mvn -o clean install"
 
 }
 }
