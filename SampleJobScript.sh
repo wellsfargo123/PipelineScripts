@@ -13,7 +13,7 @@ stage("CheckOut Code")
 stage("Maven Build")
 {
 env.WORKSPACE = pwd()
-mvn clean install -Dmaven.test.skip=true -o &>> $filepath
+sh "mvn clean install -Dmaven.test.skip=true -o &>> $filepath"
 
 }
 }
