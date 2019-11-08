@@ -11,7 +11,7 @@ stage("CheckOut Code")
 {
     checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rajgopal2693/maven.git']]])
 }
-Stage("JobCreation")
+stage("JobCreation")
 {
   echo pwd()
   sh "java -jar /home/wellsfargob144/jenkins-cli.jar -s http://34.93.112.220:8080/ create-job POCJob1 < Property.xml"
