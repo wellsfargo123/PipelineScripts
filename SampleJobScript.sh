@@ -1,7 +1,7 @@
 node{
 
-Project_ID = ${Project_ID}
-Repo_Name = ${Repo_Name}
+Project_ID = "${Project_ID}"
+Repo_Name = "${Repo_Name}"
 
 stage("CheckOut Code")
 
