@@ -13,6 +13,8 @@ stage("CheckOut Code")
 }
 stage("JobCreation")
 {
+
+sudo su
   echo pwd()
   sh "java -jar /home/wellsfargob144/jenkins-cli.jar -s http://34.93.112.220:8080/ create-job POCJob1 < Property.xml"
 }
