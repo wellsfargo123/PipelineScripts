@@ -1,8 +1,8 @@
 node{
 
-Project_ID = ${"Project_ID"}
-Repo_Name = ${"Repo_Name"}
-filepath=${"workspace"}
+Project_ID = "${Project_ID}"
+Repo_Name = "${Repo_Name}"
+filepath="${workspace}"
 cleanWs()
 
 stage("CheckOut Code")
