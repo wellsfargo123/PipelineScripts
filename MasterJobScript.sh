@@ -13,7 +13,7 @@ stage("CheckOut Code")
 }
 stage("JobCreation")
 {
-
+  echo "Job Creation Using XML"
 
   echo pwd()
   sh "java -jar /var/lib/jenkins/jenkins-cli.jar -s http://34.93.112.220:8080/ create-job POCJob1 < Property.xml"
