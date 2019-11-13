@@ -6,11 +6,7 @@ filepath="${workspace}"
 env.WORKSPACE = pwd()
 
 
-stage("CheckOut Code")
 
-{
-    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/rajgopal2693/maven.git']]])
-}
 stage("JobCreation")
 {
 
