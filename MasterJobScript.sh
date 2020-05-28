@@ -19,5 +19,4 @@ stage("JobCreation")
   sh "java -jar /var/lib/jenkins/jenkins-cli.jar -s http://34.93.112.220:8080/ create-job POCJob1 < Property.xml"
 }
 
-
 }
